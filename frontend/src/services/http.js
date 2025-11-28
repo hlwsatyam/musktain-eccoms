@@ -1,0 +1,46 @@
+import axios from 'axios';
+import { baseUrl } from 'src/helper/l1';
+//  const baseUrl ="http://localhost:3100"
+// //  const baseUrl ="https://api.fashionneedles.com"
+
+function getToken() {
+  const cname = 'token';
+  if (typeof window !== 'undefined') {
+    let name = cname + '=';
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return '';
+  }
+  return '';
+}
+
+const baseURL = baseUrl
+ 
+const http = axios.create({
+  baseURL: baseURL + '/api',
+  timeout: 25000
+});
+
+http.interceptors.request.use(
+  (config) => {
+    const token = getToken();
+    if (Boolean(token)) {
+      config.headers.Authorization = `Bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => {
+    return Promise.reject(error);
+  }
+);
+
+export default http;

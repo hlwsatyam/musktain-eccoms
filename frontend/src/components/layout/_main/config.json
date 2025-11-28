@@ -1,0 +1,131 @@
+{
+  "menu": [
+    {
+      "title": "Home",
+      "path": "/"
+    },
+    {
+      "title": "Categories",
+      "path": "h",
+      "isDropdown": true
+    }
+  ],
+  "mobile_menu": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "Search",
+      "href": "/search"
+    },
+    {
+      "name": "Product",
+      "href": "/products"
+    },
+    {
+      "name": "Cart",
+      "href": "/cart"
+    },
+    {
+      "name": "User",
+      "isUser": true,
+      "href": "/auth/login"
+    }
+  ],
+
+  "social": [
+    { "name": "FaceBook", "color": "#1672E6", "href": "#" },
+    { "name": "Instagram", "color": "#F40052", "href": "#" },
+    { "name": "Linkedin", "color": "#0962B7", "href": "#" },
+    { "name": "Pinterest", "color": "#B7081B", "href": "#" }
+  ],
+  "company": {
+    "company_name": "fasion needles",
+    "address": "123 Main Street Apartment 567",
+    "email": "test@example.com",
+    "phone": "555-1234-2222"
+  },
+ 
+  "footer_links": [
+    {
+    "headline": "About Us",
+      "children": [
+        {
+          "name": "Ecoms Adress",
+          "href": "https://www.google.co.in/maps/dir/Sector+62,+Noida,+Uttar+Pradesh/a,+12,+Deepak+Vihar,+Shital+Vihar,+Block+D,+Sector+62,+Noida,+Uttar+Pradesh+201301/@28.6188804,77.3485255,15z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x390ce5456ef36d9f:0x3b7191b1286136c8!2m2!1d77.3648567!2d28.627981!1m5!1m1!1s0x390ce51506720915:0xaac930830ba83c05!2m2!1d77.352792!2d28.6110385?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+        },
+        {
+          "name": " Email:support@fashionneedles.com",
+          "href": "mailto:support@fashionneedles.com"
+        },
+        {
+          "name": "Phone: 085954 90062",
+          "href": "tel:085954 90062"
+        }
+      ]
+    },
+
+    {
+      "headline": "Categories",
+      "children": [
+        {
+          "name": "Products",
+          "href": "/products"
+        },
+        {
+          "name": "Men",
+          "href": "/products?gender=men"
+        },
+        {
+          "name": "Women",
+          "href": "/products?gender=women"
+        },
+        {
+          "name": "Kids",
+          "href": "/products?gender=kids"
+        }
+      ]
+    },
+    {
+      "headline": "Discover",
+      "children": [
+        {
+          "name": "Contact Us",
+          "href": "/contact-us"
+        },
+        {
+          "name": " Blog",
+          "href": "/blogs"
+        },
+        {
+          "name": "Business Query",
+          "href": "/business-query"
+        },
+        {
+          "name": "Kids",
+          "href": "/products?gender=kids"
+        }
+      ]
+    },
+    {
+      "headline": "Product",
+      "children": [
+        { "name": "Track Order", "href": "/track-order" },
+        { "name": "Careers", "href": "/careers" },
+        { "name": "Whatsapp", "href": "https://wa.link/y74jkl" }
+      ]
+    },
+    {
+      "headline": "Policies",
+      "children": [
+        { "name": "FAQ", "href": "/faqs" },
+        { "name": "T&C", "href": "/tac" },
+
+        { "name": "Cancellation Policy", "href": "/cancellationpolicy" },
+ 
+        { "name": "Privacy Policy", "href": "/privacypolicy" }
+      ]
+    }
+  ]
+}

@@ -8,8 +8,8 @@ import { BsHouseHeart } from 'react-icons/bs';
 import { LiaShippingFastSolid } from 'react-icons/lia';
 import { MdOutlineDeleteOutline } from 'react-icons/md';
 import { TbTruckDelivery } from 'react-icons/tb';
-//  const baseUrl ="http://localhost:3001"
- const baseUrl ="https://api.fashionneedles.com"
+import { baseUrl } from 'src/helper/l1';
+ 
 
 function TrackDelevery() {
   const path = window.location.pathname;

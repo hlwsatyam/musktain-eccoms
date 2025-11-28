@@ -57,7 +57,7 @@ export default function CategoriesCard({ ...props }) {
                 <Image
                   alt="category"
                   src={category?.cover?.url}
-                  placeholder="blur"
+                  
                   blurDataURL={category?.cover?.blurDataURL}
                   layout="fill"
                   objectFit="cover"

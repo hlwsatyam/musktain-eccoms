@@ -107,7 +107,7 @@ export default function Banner() {
                     alt="centered-banner"
                     layout="fill"
                     objectFit="contain"
-                    placeholder="blur"
+                    
                     blurDataURL="/images/banner-3.png"
                     // sizes="300px"
                     static

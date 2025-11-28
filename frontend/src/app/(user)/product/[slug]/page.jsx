@@ -13,8 +13,7 @@ import ProductDetailsSumary from 'src/components/_main/product/summary';
 import HeaderBreadcrumbs from 'src/components/headerBreadcrumbs';
 import { baseUrl } from 'src/helper/l1';
  
-//  const baseUrl ="http://localhost:3100"
-// const baseUrl ="https://api.fashionneedles.com"
+ 
 export async function generateStaticParams() {
   const { data } = await fetch(baseUrl+ '/api/products-slugs').then((res) => res.json());
   return data?.map((product) => ({

@@ -3,9 +3,8 @@ import React, { useState } from "react";
 import { Box, Typography, TextField, Button, Slide, Snackbar, Alert } from "@mui/material";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import axios from "axios";
-import { set } from "lodash";
-//  const baseUrl ="http://localhost:3001"
-const baseUrl ="https://api.fashionneedles.com"
+import { baseUrl } from "src/helper/l1";
+ 
 
 const TrackOrder = () => {
   const [orderID, setOrderID] = useState("");

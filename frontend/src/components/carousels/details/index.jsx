@@ -119,7 +119,7 @@ function ProductDetailsCarousel({ ...props }) {
           sizes="50%"
           src={item?.url || item?.src}
           alt="hero-carousel"
-          placeholder="blur"
+          
           blurDataURL={item.blurDataURL}
         />
       )}
@@ -232,7 +232,7 @@ export default function CarouselAnimation({ ...props }) {
               sizes="14vw"
               src={item?.src || item?.url}
               alt="hero-carousel"
-              placeholder="blur"
+              
               blurDataURL={item.blurDataURL}
             />
           </Box>

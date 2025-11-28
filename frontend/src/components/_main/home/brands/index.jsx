@@ -70,7 +70,7 @@ export default async function Brands() {
                     width={70}
                     height={70}
                     draggable="false"
-                    placeholder="blur"
+                    
                     blurDataURL={v?.logo?.blurDataURL}
                   />
                 </Card>

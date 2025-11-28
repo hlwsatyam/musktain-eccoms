@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { baseUrl } from 'src/helper/l1';
-//  const baseUrl ="http://localhost:3100"
-// //  const baseUrl ="https://api.fashionneedles.com"
+ 
 
 function getToken() {
   const cname = 'token';

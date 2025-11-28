@@ -1,6 +1,7 @@
 import axios from "axios";
-const baseUrl ="https://api.fashionneedles.com"
-// const baseUrl ="http://localhost:3001"
+import { baseUrl } from "src/helper/l1";
+ 
+ 
 
 export const initiatePayment = async (amount,orderId) => {
   try {

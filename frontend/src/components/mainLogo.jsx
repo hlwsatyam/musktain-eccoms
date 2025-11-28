@@ -27,11 +27,18 @@ export const LogoMain = () => {
       <Image
         src={theme.palette.mode === 'light' ? '/fashionneedles_logo.webp' : '/fashionneedles_logo.webp'}
         alt="logo"
-        placeholder="blur"
+        
         objectFit="contain"
         layout="fill"
-        blurDataURL="/logo-light.png"
+        blurDataURL="/fashionneedles_logo.webp"
       />
+
+
+
+
+
+
+ 
     </Box>
   );
 };

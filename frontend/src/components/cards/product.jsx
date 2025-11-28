@@ -138,7 +138,7 @@ export default function ShopProductCard({ ...props }) {
                 fill
                 draggable="false"
                 objectFit="cover"
-                placeholder="blur"
+                
                 blurDataURL={image?.blurDataURL}
                 // quality={15}
               />

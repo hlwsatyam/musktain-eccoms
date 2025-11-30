@@ -19,7 +19,7 @@ export default async function Brands() {
     <Box
       sx={{
         mt: 2,
-        display: { md: 'block', xs: 'none' }
+        display: { md: 'block',  }
       }}
     >
       <Typography variant="h2" color="text.primary" textAlign="center">

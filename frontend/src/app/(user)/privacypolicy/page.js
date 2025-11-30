@@ -1,177 +1,457 @@
 "use client";
 import React from "react";
-import { Box, Typography, Divider, Container } from "@mui/material";
+import { Box, Typography, Divider, Container, List, ListItem } from "@mui/material";
 
 const PrivacyPolicy = () => {
   return (
-    <Container sx={{  backgroundColor: "#f9f9f9", color: "#333", lineHeight: "1.8" }}>
-      <Typography variant="h2" sx={{ fontWeight: "bold", mb: 3, textAlign: "center" }}>
-        Privacy Policy for Fashion Needles
+    <Container sx={{ py: 4, backgroundColor: "#f9f9f9", color: "#333", lineHeight: "1.8" }}>
+      <Typography variant="h2" sx={{ fontWeight: "bold", mb: 3, textAlign: "center", color: "#d32f2f" }}>
+        Privacy Policy for Sohkin Flower Gifts
       </Typography>
+      
+      <Typography variant="body1" sx={{ mb: 2, textAlign: "center", fontStyle: "italic" }}>
+        Effective Date: January 1, 2024 | Last Updated: January 1, 2024
+      </Typography>
+      
       <Typography variant="body1" sx={{ mb: 4, maxWidth: 800, mx: "auto", textAlign: "justify" }}>
-        At Fashion Needles, we value your privacy and are committed to safeguarding your personal information. This
-        Privacy Policy outlines the types of data we collect, how it is used, shared, and protected. By using our
-        website, you consent to the practices described in this policy.
+        Welcome to Sohkin Flower Gifts ("we," "our," or "us"). We are committed to protecting your privacy and ensuring 
+        the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard 
+        your information when you visit our website https://sohkinflowergifts.com/ or make a purchase from us.
       </Typography>
+
+      <Box sx={{ backgroundColor: "#fff8e1", p: 3, borderRadius: 2, mb: 4, border: "1px solid #ffd54f" }}>
+        <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1, color: "#d32f2f" }}>
+          Quick Summary
+        </Typography>
+        <Typography variant="body2">
+          • We collect information necessary to process your orders and enhance your experience<br/>
+          • We do not sell your personal data to third parties<br/>
+          • We implement robust security measures to protect your information<br/>
+          • You have rights to access, correct, or delete your personal data<br/>
+          • By using our services, you consent to our privacy practices
+        </Typography>
+      </Box>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
         1. Information We Collect
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        We collect information to improve your shopping experience, ensure the security of our services, and comply with
-        legal obligations. The types of information we may collect include:
+        We collect various types of information to provide and improve our services:
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Personal Information:</strong> This includes your name, email address, postal address, phone number,
-        payment information, and other details you provide during checkout or when creating an account.
+
+      <Typography variant="h6" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+        Personal Information
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Order Information:</strong> We collect data related to the products you purchase, your order history,
-        and any inquiries related to your orders.
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Contact Details:</strong> Full name, email address, phone number, delivery address
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Payment Information:</strong> Credit/debit card details (processed securely via payment gateways), UPI IDs, wallet information
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Account Information:</strong> Username, password, profile preferences, wish lists
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Recipient Information:</strong> Details of gift recipients including their name, address, and contact information
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Typography variant="h6" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+        Transaction Information
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Device Information:</strong> Information such as your IP address, browser type, operating system, and
-        device identifiers help us understand how you access our website.
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>Order history, purchase details, payment records, delivery status</Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>Product preferences, special occasion dates, gift messages</Typography>
+        </ListItem>
+      </List>
+
+      <Typography variant="h6" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+        Technical Information
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Usage Information:</strong> Data about your browsing behavior, product preferences, and interactions
-        with our site.
-      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>IP address, browser type, device information, operating system</Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>Website usage data, clickstream data, page response times</Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>Location data (with your permission) for delivery optimization</Typography>
+        </ListItem>
+      </List>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
         2. How We Use Your Information
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        Fashion Needles uses your information to provide, personalize, and improve our services. Specific uses include:
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Order Processing:</strong> To process and fulfill your orders, arrange deliveries, and send order confirmations
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Customer Service:</strong> To provide support, respond to inquiries, and handle complaints
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Personalization:</strong> To customize product recommendations based on your preferences and purchase history
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Marketing:</strong> To send promotional offers, newsletters, and updates (with your consent)
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Quality Improvement:</strong> To analyze website usage and improve our products and services
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Security:</strong> To detect and prevent fraud, unauthorized transactions, and other illegal activities
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Legal Compliance:</strong> To comply with applicable laws, regulations, and legal processes
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        3. Legal Basis for Processing (GDPR Compliance)
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Order Processing:</strong> To fulfill orders, process payments, and provide customer support.
+        For users in the European Economic Area (EEA), we process your personal data based on:
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Contractual Necessity:</strong> To fulfill our contractual obligations when you make a purchase
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Legal Obligation:</strong> To comply with legal and regulatory requirements
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Legitimate Interests:</strong> For business operations, security, and marketing (where appropriate)
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Consent:</strong> For specific purposes where we have obtained your explicit consent
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        4. How We Share Your Information
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Marketing and Promotions:</strong> To send promotional messages, offers, and updates. You can
-        unsubscribe at any time.
+        We may share your information with:
+      </Typography>
+      
+      <Typography variant="h6" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+        Service Providers
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Payment Processors:</strong> Razorpay, PayPal, Stripe for secure payment processing
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Delivery Partners:</strong> Delivery personnel and logistics companies for order fulfillment
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>IT Service Providers:</strong> Cloud hosting, analytics, and customer support services
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Typography variant="h6" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+        Legal Requirements
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>When required by law, court order, or governmental authority</Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>To protect our rights, property, or safety, or that of our users</Typography>
+        </ListItem>
+      </List>
+
+      <Typography variant="h6" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
+        Business Transfers
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>In connection with a merger, acquisition, or sale of all or portion of our assets</Typography>
+        </ListItem>
+      </List>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        5. Data Security Measures
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Security and Fraud Prevention:</strong> To protect against unauthorized transactions and ensure the
-        integrity of our platform.
+        We implement comprehensive security measures to protect your data:
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Encryption:</strong> SSL/TLS encryption for data transmission, AES-256 for data at rest
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Access Controls:</strong> Role-based access controls and authentication mechanisms
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Payment Security:</strong> PCI DSS compliant payment processing; we do not store full card details
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Regular Audits:</strong> Security assessments and vulnerability testing
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Employee Training:</strong> Privacy and security awareness training for all staff
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        6. Data Retention
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Legal Compliance:</strong> To meet regulatory and legal requirements.
+        We retain your personal data only for as long as necessary:
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Active Accounts:</strong> Until you request deletion or account closure
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Order Records:</strong> 7 years for tax and legal compliance purposes
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Marketing Data:</strong> Until consent is withdrawn or 3 years of inactivity
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Customer Service Records:</strong> 3 years from last interaction
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        7. Your Rights and Choices
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        You have the following rights regarding your personal data:
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Access:</strong> Right to know what personal data we hold about you
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Correction:</strong> Right to correct inaccurate or incomplete data
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Deletion:</strong> Right to request deletion of your personal data
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Portability:</strong> Right to receive your data in a structured, machine-readable format
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Objection:</strong> Right to object to certain processing activities
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Withdraw Consent:</strong> Right to withdraw previously given consent
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Marketing Opt-out:</strong> Unsubscribe from marketing communications at any time
+          </Typography>
+        </ListItem>
+      </List>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        8. Cookies and Tracking Technologies
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        We use cookies and similar technologies for:
+      </Typography>
+      <List>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Essential Cookies:</strong> Required for website functionality and security
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Analytical Cookies:</strong> Google Analytics for website performance monitoring
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Marketing Cookies:</strong> For personalized advertising and retargeting
+          </Typography>
+        </ListItem>
+        <ListItem sx={{ display: 'list-item', mb: 1 }}>
+          <Typography>
+            <strong>Preference Cookies:</strong> To remember your settings and preferences
+          </Typography>
+        </ListItem>
+      </List>
+      <Typography variant="body1" sx={{ mb: 2 }}>
+        You can manage cookie preferences through your browser settings or our cookie consent banner.
       </Typography>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        3. How We Share Your Information
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        9. International Data Transfers
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        We may share your personal information in the following situations:
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Service Providers:</strong> With third-party companies that assist with services like payment
-        processing, order fulfillment, and marketing.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Legal Obligations:</strong> When required by law or to protect the rights, safety, and property of
-        Fashion Needles.
+        Your data may be transferred to and processed in countries other than your own. We ensure appropriate safeguards 
+        are in place through Standard Contractual Clauses and other approved mechanisms for international data transfers.
       </Typography>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        4. Cookies and Tracking Technologies
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        10. Children's Privacy
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        We use cookies, web beacons, and similar technologies to enhance your experience on our website. Cookies allow
-        us to remember your preferences, track your usage, and personalize content and ads.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        You can choose to disable cookies through your browser settings, though this may affect certain functionalities
-        on our site.
+        Our services are not directed to individuals under 16. We do not knowingly collect personal information from 
+        children under 16. If you believe we have collected information from a child, please contact us immediately.
       </Typography>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        5. Data Security
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        11. Third-Party Links
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        Fashion Needles implements industry-standard measures to protect your personal information from unauthorized
-        access, alteration, and destruction. While we take all reasonable precautions, no system is entirely secure, and
-        we cannot guarantee complete security.
+        Our website may contain links to third-party sites. This Privacy Policy does not apply to those sites. 
+        We encourage you to review the privacy policies of any third-party sites you visit.
       </Typography>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        6. Your Rights and Choices
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        12. Changes to This Privacy Policy
       </Typography>
       <Typography variant="body1" sx={{ mb: 2 }}>
-        Depending on your jurisdiction, you may have the following rights regarding your personal information:
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Access and Correction:</strong> You may request access to and correction of your personal data.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Deletion:</strong> You can request that we delete your personal information under certain
-        circumstances.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Data Portability:</strong> The right to request your information in a portable format.
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        - <strong>Withdraw Consent:</strong> You can withdraw consent for data processing where consent was previously
-        provided.
+        We may update this Privacy Policy periodically. We will notify you of significant changes by posting the new 
+        policy on our website and updating the effective date. Continued use of our services after changes constitutes 
+        acceptance of the updated policy.
       </Typography>
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        7. Third-Party Links
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        13. Contact Information
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        Our website may contain links to third-party sites. Fashion Needles is not responsible for the privacy practices
-        or content of these external websites. We encourage you to review their privacy policies before interacting with
-        them.
+      <Typography variant="body1" sx={{ mb: 1 }}>
+        For privacy-related inquiries or to exercise your rights, please contact:
       </Typography>
-
-      <Divider sx={{ my: 3 }} />
-
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        8. Children’s Privacy
+      <Typography variant="body1" sx={{ mb: 1 }}>
+        <strong>Data Protection Officer:</strong><br/>
+        Email: dpo@sohkinflowergifts.com<br/>
+        Phone: +91-9876543213<br/>
+        Address: [Your Complete Business Address]
       </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        Fashion Needles does not knowingly collect personal information from children under the age of 13. If you are a
-        parent or guardian and believe your child has provided us with personal information, please contact us to
-        request deletion.
-      </Typography>
-
-      <Divider sx={{ my: 3 }} />
-
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        9. Changes to This Privacy Policy
-      </Typography>
-      <Typography variant="body1" sx={{ mb: 2 }}>
-        We may update our Privacy Policy from time to time to reflect changes in our practices or legal requirements.
-        Any changes will be posted on this page, and significant changes may be communicated through additional notice.
-      </Typography>
-
-      <Divider sx={{ my: 3 }} />
-
-      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1 }}>
-        10. Contact Us
+      <Typography variant="body1" sx={{ mb: 1 }}>
+        <strong>Grievance Officer (India):</strong><br/>
+        Name: Mr. Rajesh Kumar<br/>
+        Email: grievance@sohkinflowergifts.com<br/>
+        Phone: +91-9876543212
       </Typography>
       <Typography variant="body1" sx={{ mb: 4 }}>
-        If you have questions or concerns regarding this Privacy Policy, please reach out to us at{" "}
-        <a href="mailto:privacy@fashionneedles.com">privacy@fashionneedles.com</a>.
+        <strong>General Support:</strong><br/>
+        Email: support@sohkinflowergifts.com<br/>
+        Phone: +91-9876543210
       </Typography>
+
+      <Divider sx={{ my: 3 }} />
+
+      <Typography variant="h4" sx={{ fontWeight: "bold", mt: 2, mb: 1, color: "#d32f2f" }}>
+        14. Complaints
+      </Typography>
+      <Typography variant="body1" sx={{ mb: 4 }}>
+        If you have concerns about our data practices, you may lodge a complaint with your local data protection 
+        authority. For Indian users, you may contact the Cyber Cell of your local police department.
+      </Typography>
+
+      <Box sx={{ backgroundColor: "#e8f5e8", p: 3, borderRadius: 2, border: "1px solid #4caf50" }}>
+        <Typography variant="h6" sx={{ fontWeight: "bold", mb: 1, color: "#2e7d32" }}>
+          Your Privacy Matters
+        </Typography>
+        <Typography variant="body2">
+          We are committed to protecting your privacy and being transparent about our data practices. 
+          Thank you for trusting Sohkin Flower Gifts with your personal information.
+        </Typography>
+      </Box>
     </Container>
   );
 };

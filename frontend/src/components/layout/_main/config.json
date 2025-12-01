@@ -124,7 +124,8 @@
 
         { "name": "Cancellation Policy", "href": "/cancellationpolicy" },
  
-        { "name": "Privacy Policy", "href": "/privacypolicy" }
+        { "name": "Privacy Policy", "href": "/privacypolicy" },
+        { "name": "Shipping Policy", "href": "/ship-pol" }
       ]
     }
   ]
